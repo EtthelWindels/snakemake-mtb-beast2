@@ -336,7 +336,6 @@ analyses:
         treelog_every: 10000
         sampling_prop: 0.045  
 
-
   ## Sampling proportion = 0.5x estimate (50% underreporting)
 
   bdmm_sampl05:

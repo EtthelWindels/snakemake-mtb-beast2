@@ -1,9 +1,7 @@
 ### Snakemake workflow to run BEAST2 analysis with Mtb data
 # Copyright (C) 2024  Etthel Windels
 
-#import urllib, json
-#import pandas as pd
-#import numpy as np
+
 from snakemake.utils import validate, min_version
 
 min_version("7.11.0")
@@ -36,33 +34,13 @@ for method in METHODS:
         all_beast_files += files
         
 # Figure output files
-
-# def _get_first_analysis(method):
-#     return list(config["analyses"][method].keys())[0]
-
-# def _get_model_method(method,analysis):
-#      return config["analyses"][method][analysis].get("model")
-
 bdmm_figures = expand("results/figures/{method}.{extension}",
         method = ["bdmm_sampl025","bdmm_sampl05","bdmm_sampl1","bdmm_bdsky_fixedRe","bdmm_inverse","bdmm_clockgrid"], 
         extension = ["png","svg"])
 
 bd_bdmm_figures = expand("results/figures/bd-bdmm_comparison_{parameter}.{extension}",
         parameter = ["Re","time_until_transm","infperiod_tot","transrate_infperiod"], 
-        extension = ["png","svg"])
-
-# bdmm_bdsky_fRe_figures = expand("results/figures/bdmm_bdsky_fRe/{method}/{output}.png",
-#         method = [M for M in config["run"].keys() if _get_model_method(M,_get_first_analysis(M)) == "BDMM_BDSKY_fRe"], 
-#         output = ["infperiod","latentperiod","infperiodtot","transm_rate"])
-# bdmm_inverse_figures = expand("results/figures/bdmm_inverse/{method}/{output}.png",
-#         method = [M for M in config["run"].keys() if _get_model_method(M,_get_first_analysis(M)) == "BDMM_INV"], 
-#         output = ["Re","infperiod","latentperiod","infperiodtot","transm_rate"])      
-# bd_figures = expand("results/figures/bd/{method}/{output}.png",
-#         method = [M for M in config["run"].keys() if _get_model_method(M,_get_first_analysis(M)) == "BD"], 
-#         output = ["Re","infperiod","transm_rate"])  
-# bdmm_modelselection_figures = expand("results/figures/bdmm_modelselection/{method}/{output}.png",
-#         method = [M for M in config["run"].keys() if _get_model_method(M,_get_first_analysis(M)) == "BDMM_SEL"], 
-#         output = ["Re","infperiod","latentperiod","infperiodtot","transm_rate","BF"])    
+        extension = ["png","svg"]) 
 
 rule all:
     input:
@@ -76,7 +54,6 @@ rule all:
         # bdmm_modelselection_figures
     default_target: True
         
-
 rule clean:
     shell:
         '''
