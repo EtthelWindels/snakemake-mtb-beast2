@@ -1,0 +1,2698 @@
+analyses:
+  
+  ### BDMM
+
+  ## Sampling proportion = 0.25x estimate (75% underreporting)
+
+  bdmm_sampl025:
+
+  # Malawi
+
+    bdmm_sampl025_Ma_L1:
+      dataset: "Malawi_L1"
+      model: "BDMM"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 757261
+        invar_C: 1446122
+        invar_G: 1440632
+        invar_T: 757157
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.025
+
+    bdmm_sampl025_Ma_L2:
+      dataset: "Malawi_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 758235
+        invar_C: 1449899
+        invar_G: 1444508
+        invar_T: 758105
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.025
+
+    bdmm_sampl025_Ma_L3:
+      dataset: "Malawi_L3"
+      model: "BDMM"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 758019
+        invar_C: 1449015
+        invar_G: 1443614
+        invar_T: 757885
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.025
+
+    bdmm_sampl025_Ma_L4:
+      dataset: "Malawi_L4"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 755728
+        invar_C: 1442858
+        invar_G: 1437387
+        invar_T: 755482
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0086
+
+  # Tanzania
+
+    bdmm_sampl025_Ta_L1:
+      dataset: "Tanzania_L1"
+      model: "BDMM"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 757193
+        invar_C: 1445620
+        invar_G: 1440304
+        invar_T: 757054
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+
+    bdmm_sampl025_Ta_L2:
+      dataset: "Tanzania_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 758241
+        invar_C: 1449843
+        invar_G: 1444499
+        invar_T: 758079
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+
+    bdmm_sampl025_Ta_L3:
+      dataset: "Tanzania_L3"
+      model: "BDMM"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 757478
+        invar_C: 1447129
+        invar_G: 1441682
+        invar_T: 757287
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0089
+
+    bdmm_sampl025_Ta_L4:
+      dataset: "Tanzania_L4"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 756818
+        invar_C: 1446064
+        invar_G: 1440575
+        invar_T: 756702
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+
+  # The Gambia
+
+    bdmm_sampl025_TG_L2:
+      dataset: "TheGambia_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 10000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 758196
+        invar_C: 1449808
+        invar_G: 1444461
+        invar_T: 758075
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.088
+
+    bdmm_sampl025_TG_L4:
+      dataset: "TheGambia_L4"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 756096
+        invar_C: 1443247
+        invar_G: 1437847
+        invar_T: 755861
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.048
+
+    bdmm_sampl025_TG_L6:
+      dataset: "TheGambia_L6"
+      model: "BDMM"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 756308
+        invar_C: 1442914
+        invar_G: 1437460
+        invar_T: 756142
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.060
+
+  # Vietnam
+
+    bdmm_sampl025_VN_L1:
+      dataset: "Vietnam_L1"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 755505
+        invar_C: 1438820
+        invar_G: 1433269
+        invar_T: 755399
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.045
+
+    bdmm_sampl025_VN_L2:
+      dataset: "Vietnam_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 754323
+        invar_C: 2160032
+        invar_G: 1434838
+        invar_T: 754147
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.017
+
+    bdmm_sampl025_VN_L4:
+      dataset: "Vietnam_L4"
+      model: "BDMM"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 756519
+        invar_C: 1444853
+        invar_G: 1439546
+        invar_T: 756448
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.045  
+
+
+  ## Sampling proportion = 0.5x estimate (50% underreporting)
+
+  bdmm_sampl05:
+
+  # Malawi
+
+    bdmm_sampl05_Ma_L1:
+      dataset: "Malawi_L1"
+      model: "BDMM"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 757261
+        invar_C: 1446122
+        invar_G: 1440632
+        invar_T: 757157
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.051
+
+    bdmm_sampl05_Ma_L2:
+      dataset: "Malawi_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 758235
+        invar_C: 1449899
+        invar_G: 1444508
+        invar_T: 758105
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.051
+
+    bdmm_sampl05_Ma_L3:
+      dataset: "Malawi_L3"
+      model: "BDMM"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 758019
+        invar_C: 1449015
+        invar_G: 1443614
+        invar_T: 757885
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.051
+
+    bdmm_sampl05_Ma_L4:
+      dataset: "Malawi_L4"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 755728
+        invar_C: 1442858
+        invar_G: 1437387
+        invar_T: 755482
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.017
+
+  # Tanzania
+
+    bdmm_sampl05_Ta_L1:
+      dataset: "Tanzania_L1"
+      model: "BDMM"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 757193
+        invar_C: 1445620
+        invar_G: 1440304
+        invar_T: 757054
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.019
+
+    bdmm_sampl05_Ta_L2:
+      dataset: "Tanzania_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 758241
+        invar_C: 1449843
+        invar_G: 1444499
+        invar_T: 758079
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.019
+
+    bdmm_sampl05_Ta_L3:
+      dataset: "Tanzania_L3"
+      model: "BDMM"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 757478
+        invar_C: 1447129
+        invar_G: 1441682
+        invar_T: 757287
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.018
+
+    bdmm_sampl05_Ta_L4:
+      dataset: "Tanzania_L4"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 756818
+        invar_C: 1446064
+        invar_G: 1440575
+        invar_T: 756702
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.019
+
+  # The Gambia
+
+    bdmm_sampl05_TG_L2:
+      dataset: "TheGambia_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 10000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 758196
+        invar_C: 1449808
+        invar_G: 1444461
+        invar_T: 758075
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.18
+
+    bdmm_sampl05_TG_L4:
+      dataset: "TheGambia_L4"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 756096
+        invar_C: 1443247
+        invar_G: 1437847
+        invar_T: 755861
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.095
+
+    bdmm_sampl05_TG_L6:
+      dataset: "TheGambia_L6"
+      model: "BDMM"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 756308
+        invar_C: 1442914
+        invar_G: 1437460
+        invar_T: 756142
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.12
+
+  # Vietnam
+
+    bdmm_sampl05_VN_L1:
+      dataset: "Vietnam_L1"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 755505
+        invar_C: 1438820
+        invar_G: 1433269
+        invar_T: 755399
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.090
+
+    bdmm_sampl05_VN_L2:
+      dataset: "Vietnam_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 754323
+        invar_C: 2160032
+        invar_G: 1434838
+        invar_T: 754147
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.034
+
+    bdmm_sampl05_VN_L4:
+      dataset: "Vietnam_L4"
+      model: "BDMM"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 2
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 756519
+        invar_C: 1444853
+        invar_G: 1439546
+        invar_T: 756448
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.090        
+
+  ## Sampling proportion = 1x estimate (0% underreporting)
+
+  bdmm_sampl1:
+
+  # Malawi
+
+    bdmm_sampl1_Ma_L1:
+      dataset: "Malawi_L1"
+      model: "BDMM"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 757261
+        invar_C: 1446122
+        invar_G: 1440632
+        invar_T: 757157
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.10
+
+    bdmm_sampl1_Ma_L2:
+      dataset: "Malawi_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 758235
+        invar_C: 1449899
+        invar_G: 1444508
+        invar_T: 758105
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.10
+
+    bdmm_sampl1_Ma_L3:
+      dataset: "Malawi_L3"
+      model: "BDMM"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 758019
+        invar_C: 1449015
+        invar_G: 1443614
+        invar_T: 757885
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.10
+
+    bdmm_sampl1_Ma_L4:
+      dataset: "Malawi_L4"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 755728
+        invar_C: 1442858
+        invar_G: 1437387
+        invar_T: 755482
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.035
+
+  # Tanzania
+
+    bdmm_sampl1_Ta_L1:
+      dataset: "Tanzania_L1"
+      model: "BDMM"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 757193
+        invar_C: 1445620
+        invar_G: 1440304
+        invar_T: 757054
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.038
+
+    bdmm_sampl1_Ta_L2:
+      dataset: "Tanzania_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 758241
+        invar_C: 1449843
+        invar_G: 1444499
+        invar_T: 758079
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.038
+
+    bdmm_sampl1_Ta_L3:
+      dataset: "Tanzania_L3"
+      model: "BDMM"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 757478
+        invar_C: 1447129
+        invar_G: 1441682
+        invar_T: 757287
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.036
+
+    bdmm_sampl1_Ta_L4:
+      dataset: "Tanzania_L4"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 756818
+        invar_C: 1446064
+        invar_G: 1440575
+        invar_T: 756702
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.038
+
+  # The Gambia
+
+    bdmm_sampl1_TG_L2:
+      dataset: "TheGambia_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 10000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 758196
+        invar_C: 1449808
+        invar_G: 1444461
+        invar_T: 758075
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.35
+
+    bdmm_sampl1_TG_L4:
+      dataset: "TheGambia_L4"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 756096
+        invar_C: 1443247
+        invar_G: 1437847
+        invar_T: 755861
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.19
+
+    bdmm_sampl1_TG_L6:
+      dataset: "TheGambia_L6"
+      model: "BDMM"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 756308
+        invar_C: 1442914
+        invar_G: 1437460
+        invar_T: 756142
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.24
+
+  # Vietnam
+
+    bdmm_sampl1_VN_L1:
+      dataset: "Vietnam_L1"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 755505
+        invar_C: 1438820
+        invar_G: 1433269
+        invar_T: 755399
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.18
+
+    bdmm_sampl1_VN_L2:
+      dataset: "Vietnam_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 754323
+        invar_C: 2160032
+        invar_G: 1434838
+        invar_T: 754147
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.068
+
+    bdmm_sampl1_VN_L4:
+      dataset: "Vietnam_L4"
+      model: "BDMM"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm.xml"
+      xml_params:
+        invar_A: 756519
+        invar_C: 1444853
+        invar_G: 1439546
+        invar_T: 756448
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.18   
+
+  ## BDMM - BDSKY
+
+  bdmm_bdsky_fixedRe:
+
+  # Malawi
+
+    bdmm_bdsky_fixedRe_Ma_L1:
+      dataset: "Malawi_L1"
+      model: "BDMM_BDSKY_fRe"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_bdsky_fixedRe.xml"
+      xml_params:
+        invar_A: 757261
+        invar_C: 1446122
+        invar_G: 1440632
+        invar_T: 757157
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.025
+
+    bdmm_bdsky_fixedRe_Ma_L2:
+      dataset: "Malawi_L2"
+      model: "BDMM_BDSKY_fRe"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_bdsky_fixedRe.xml"
+      xml_params:
+        invar_A: 758235
+        invar_C: 1449899
+        invar_G: 1444508
+        invar_T: 758105
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.025
+
+    bdmm_bdsky_fixedRe_Ma_L3:
+      dataset: "Malawi_L3"
+      model: "BDMM_BDSKY_fRe"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_bdsky_fixedRe.xml"
+      xml_params:
+        invar_A: 758019
+        invar_C: 1449015
+        invar_G: 1443614
+        invar_T: 757885
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.025
+
+    bdmm_bdsky_fixedRe_Ma_L4:
+      dataset: "Malawi_L4"
+      model: "BDMM_BDSKY_fRe"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_bdsky_fixedRe.xml"
+      xml_params:
+        invar_A: 755728
+        invar_C: 1442858
+        invar_G: 1437387
+        invar_T: 755482
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0086
+
+  # Tanzania
+
+    bdmm_bdsky_fixedRe_Ta_L1:
+      dataset: "Tanzania_L1"
+      model: "BDMM_BDSKY_fRe"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_bdsky_fixedRe.xml"
+      xml_params:
+        invar_A: 757193
+        invar_C: 1445620
+        invar_G: 1440304
+        invar_T: 757054
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+
+    bdmm_bdsky_fixedRe_Ta_L2:
+      dataset: "Tanzania_L2"
+      model: "BDMM_BDSKY_fRe"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_bdsky_fixedRe.xml"
+      xml_params:
+        invar_A: 758241
+        invar_C: 1449843
+        invar_G: 1444499
+        invar_T: 758079
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+
+    bdmm_bdsky_fixedRe_Ta_L3:
+      dataset: "Tanzania_L3"
+      model: "BDMM_BDSKY_fRe"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_bdsky_fixedRe.xml"
+      xml_params:
+        invar_A: 757478
+        invar_C: 1447129
+        invar_G: 1441682
+        invar_T: 757287
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0089
+
+    bdmm_bdsky_fixedRe_Ta_L4:
+      dataset: "Tanzania_L4"
+      model: "BDMM_BDSKY_fRe"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_bdsky_fixedRe.xml"
+      xml_params:
+        invar_A: 756818
+        invar_C: 1446064
+        invar_G: 1440575
+        invar_T: 756702
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+
+  # The Gambia
+
+    bdmm_bdsky_fixedRe_TG_L2:
+      dataset: "TheGambia_L2"
+      model: "BDMM_BDSKY_fRe"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 10000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_bdsky_fixedRe.xml"
+      xml_params:
+        invar_A: 758196
+        invar_C: 1449808
+        invar_G: 1444461
+        invar_T: 758075
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.088
+
+    bdmm_bdsky_fixedRe_TG_L4:
+      dataset: "TheGambia_L4"
+      model: "BDMM_BDSKY_fRe"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_bdsky_fixedRe.xml"
+      xml_params:
+        invar_A: 756096
+        invar_C: 1443247
+        invar_G: 1437847
+        invar_T: 755861
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.048
+
+    bdmm_bdsky_fixedRe_TG_L6:
+      dataset: "TheGambia_L6"
+      model: "BDMM_BDSKY_fRe"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_bdsky_fixedRe.xml"
+      xml_params:
+        invar_A: 756308
+        invar_C: 1442914
+        invar_G: 1437460
+        invar_T: 756142
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.060
+
+  # Vietnam
+
+    bdmm_bdsky_fixedRe_VN_L1:
+      dataset: "Vietnam_L1"
+      model: "BDMM_BDSKY_fRe"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_bdsky_fixedRe.xml"
+      xml_params:
+        invar_A: 755505
+        invar_C: 1438820
+        invar_G: 1433269
+        invar_T: 755399
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.045
+
+    bdmm_bdsky_fixedRe_VN_L2:
+      dataset: "Vietnam_L2"
+      model: "BDMM_BDSKY_fRe"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_bdsky_fixedRe.xml"
+      xml_params:
+        invar_A: 754323
+        invar_C: 2160032
+        invar_G: 1434838
+        invar_T: 754147
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.017
+
+    bdmm_bdsky_fixedRe_VN_L4:
+      dataset: "Vietnam_L4"
+      model: "BDMM_BDSKY_fRe"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_bdsky_fixedRe.xml"
+      xml_params:
+        invar_A: 756519
+        invar_C: 1444853
+        invar_G: 1439546
+        invar_T: 756448
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.045   
+
+  ## Exponential prior on inverse migration rate
+
+  bdmm_inverse:
+
+  # Malawi
+
+    bdmm_inverse_Ma_L1:
+      dataset: "Malawi_L1"
+      model: "BDMM_INV"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_inverse.xml"
+      xml_params:
+        invar_A: 757261
+        invar_C: 1446122
+        invar_G: 1440632
+        invar_T: 757157
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.025
+
+    bdmm_inverse_Ma_L2:
+      dataset: "Malawi_L2"
+      model: "BDMM_INV"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_inverse.xml"
+      xml_params:
+        invar_A: 758235
+        invar_C: 1449899
+        invar_G: 1444508
+        invar_T: 758105
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.025
+
+    bdmm_inverse_Ma_L3:
+      dataset: "Malawi_L3"
+      model: "BDMM_INV"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_inverse.xml"
+      xml_params:
+        invar_A: 758019
+        invar_C: 1449015
+        invar_G: 1443614
+        invar_T: 757885
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.025
+
+    bdmm_inverse_Ma_L4:
+      dataset: "Malawi_L4"
+      model: "BDMM_INV"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_inverse.xml"
+      xml_params:
+        invar_A: 755728
+        invar_C: 1442858
+        invar_G: 1437387
+        invar_T: 755482
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0086
+
+  # Tanzania
+
+    bdmm_inverse_Ta_L1:
+      dataset: "Tanzania_L1"
+      model: "BDMM_INV"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_inverse.xml"
+      xml_params:
+        invar_A: 757193
+        invar_C: 1445620
+        invar_G: 1440304
+        invar_T: 757054
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+
+    bdmm_inverse_Ta_L2:
+      dataset: "Tanzania_L2"
+      model: "BDMM_INV"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_inverse.xml"
+      xml_params:
+        invar_A: 758241
+        invar_C: 1449843
+        invar_G: 1444499
+        invar_T: 758079
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+
+    bdmm_inverse_Ta_L3:
+      dataset: "Tanzania_L3"
+      model: "BDMM_INV"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_inverse.xml"
+      xml_params:
+        invar_A: 757478
+        invar_C: 1447129
+        invar_G: 1441682
+        invar_T: 757287
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0089
+
+    bdmm_inverse_Ta_L4:
+      dataset: "Tanzania_L4"
+      model: "BDMM_INV"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_inverse.xml"
+      xml_params:
+        invar_A: 756818
+        invar_C: 1446064
+        invar_G: 1440575
+        invar_T: 756702
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+
+  # The Gambia
+
+    bdmm_inverse_TG_L2:
+      dataset: "TheGambia_L2"
+      model: "BDMM_INV"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 10000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_inverse.xml"
+      xml_params:
+        invar_A: 758196
+        invar_C: 1449808
+        invar_G: 1444461
+        invar_T: 758075
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.088
+
+    bdmm_inverse_TG_L4:
+      dataset: "TheGambia_L4"
+      model: "BDMM_INV"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_inverse.xml"
+      xml_params:
+        invar_A: 756096
+        invar_C: 1443247
+        invar_G: 1437847
+        invar_T: 755861
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.048
+
+    bdmm_inverse_TG_L6:
+      dataset: "TheGambia_L6"
+      model: "BDMM_INV"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_inverse.xml"
+      xml_params:
+        invar_A: 756308
+        invar_C: 1442914
+        invar_G: 1437460
+        invar_T: 756142
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.060
+
+  # Vietnam
+
+    bdmm_inverse_VN_L1:
+      dataset: "Vietnam_L1"
+      model: "BDMM_INV"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_inverse.xml"
+      xml_params:
+        invar_A: 755505
+        invar_C: 1438820
+        invar_G: 1433269
+        invar_T: 755399
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.045
+
+    bdmm_inverse_VN_L2:
+      dataset: "Vietnam_L2"
+      model: "BDMM_INV"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_inverse.xml"
+      xml_params:
+        invar_A: 754323
+        invar_C: 2160032
+        invar_G: 1434838
+        invar_T: 754147
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.017
+
+    bdmm_inverse_VN_L4:
+      dataset: "Vietnam_L4"
+      model: "BDMM_INV"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_inverse.xml"
+      xml_params:
+        invar_A: 756519
+        invar_C: 1444853
+        invar_G: 1439546
+        invar_T: 756448
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.045    
+
+## Grid of fixed clock rates (Tanzania L1 and L2)
+
+  bdmm_clockgrid:
+
+  # 1 : L1 10-8 - L2 6.4x10-7
+
+    bdmm_clockgrid1_Ta_L1:
+      dataset: "Tanzania_L1"
+      model: "BDMM"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_fixedclock.xml"
+      xml_params:
+        invar_A: 757193
+        invar_C: 1445620
+        invar_G: 1440304
+        invar_T: 757054
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+        clock_rate: 1.0E-8 
+
+    bdmm_clockgrid1_Ta_L2:
+      dataset: "Tanzania_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_fixedclock.xml"
+      xml_params:
+        invar_A: 758241
+        invar_C: 1449843
+        invar_G: 1444499
+        invar_T: 758079
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+        clock_rate: 6.4E-7  
+
+    # 2 : L1 2x10-8 - L2 3.2x10-7
+
+    bdmm_clockgrid2_Ta_L1:
+      dataset: "Tanzania_L1"
+      model: "BDMM"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_fixedclock.xml"
+      xml_params:
+        invar_A: 757193
+        invar_C: 1445620
+        invar_G: 1440304
+        invar_T: 757054
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+        clock_rate: 2.0E-8 
+
+    bdmm_clockgrid2_Ta_L2:
+      dataset: "Tanzania_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_fixedclock.xml"
+      xml_params:
+        invar_A: 758241
+        invar_C: 1449843
+        invar_G: 1444499
+        invar_T: 758079
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+        clock_rate: 3.2E-7     
+
+  # 3 : L1 4x10-8 - L2 1.6x10-7
+
+    bdmm_clockgrid3_Ta_L1:
+      dataset: "Tanzania_L1"
+      model: "BDMM"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_fixedclock.xml"
+      xml_params:
+        invar_A: 757193
+        invar_C: 1445620
+        invar_G: 1440304
+        invar_T: 757054
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+        clock_rate: 4.0E-8 
+
+    bdmm_clockgrid3_Ta_L2:
+      dataset: "Tanzania_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_fixedclock.xml"
+      xml_params:
+        invar_A: 758241
+        invar_C: 1449843
+        invar_G: 1444499
+        invar_T: 758079
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+        clock_rate: 1.6E-7   
+
+  # 4 : L1 8x10-8 - L2 8x10-8
+
+    bdmm_clockgrid4_Ta_L1:
+      dataset: "Tanzania_L1"
+      model: "BDMM"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_fixedclock.xml"
+      xml_params:
+        invar_A: 757193
+        invar_C: 1445620
+        invar_G: 1440304
+        invar_T: 757054
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+        clock_rate: 8.0E-8 
+
+    bdmm_clockgrid4_Ta_L2:
+      dataset: "Tanzania_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_fixedclock.xml"
+      xml_params:
+        invar_A: 758241
+        invar_C: 1449843
+        invar_G: 1444499
+        invar_T: 758079
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+        clock_rate: 8.0E-8     
+
+  # 5 : L1 1.6x10-7 - L2 4x10-8
+
+    bdmm_clockgrid5_Ta_L1:
+      dataset: "Tanzania_L1"
+      model: "BDMM"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_fixedclock.xml"
+      xml_params:
+        invar_A: 757193
+        invar_C: 1445620
+        invar_G: 1440304
+        invar_T: 757054
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+        clock_rate: 1.6E-7 
+
+    bdmm_clockgrid5_Ta_L2:
+      dataset: "Tanzania_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_fixedclock.xml"
+      xml_params:
+        invar_A: 758241
+        invar_C: 1449843
+        invar_G: 1444499
+        invar_T: 758079
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+        clock_rate: 4.0E-8   
+
+  # 6 : L1 3.2x10-8 - L2 2x10-7
+
+    bdmm_clockgrid6_Ta_L1:
+      dataset: "Tanzania_L1"
+      model: "BDMM"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_fixedclock.xml"
+      xml_params:
+        invar_A: 757193
+        invar_C: 1445620
+        invar_G: 1440304
+        invar_T: 757054
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+        clock_rate: 3.2E-7 
+
+    bdmm_clockgrid6_Ta_L2:
+      dataset: "Tanzania_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_fixedclock.xml"
+      xml_params:
+        invar_A: 758241
+        invar_C: 1449843
+        invar_G: 1444499
+        invar_T: 758079
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+        clock_rate: 2.0E-8
+
+  # 7 : L1 6.4x10-7 - L2 10-8
+
+    bdmm_clockgrid7_Ta_L1:
+      dataset: "Tanzania_L1"
+      model: "BDMM"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_fixedclock.xml"
+      xml_params:
+        invar_A: 757193
+        invar_C: 1445620
+        invar_G: 1440304
+        invar_T: 757054
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+        clock_rate: 6.4E-7
+
+    bdmm_clockgrid7_Ta_L2:
+      dataset: "Tanzania_L2"
+      model: "BDMM"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_fixedclock.xml"
+      xml_params:
+        invar_A: 758241
+        invar_C: 1449843
+        invar_G: 1444499
+        invar_T: 758079
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+        clock_rate: 1.0E-8                        
+
+  ### BD
+
+  ## Sampling proportion = 0.25x estimate (75% underreporting)
+
+  bd_sampl025:
+
+  # Malawi
+
+    bd_sampl025_Ma_L1:
+      dataset: "Malawi_L1"
+      model: "BD"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bd.xml"
+      xml_params:
+        invar_A: 757261
+        invar_C: 1446122
+        invar_G: 1440632
+        invar_T: 757157
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.025
+
+    bd_sampl025_Ma_L2:
+      dataset: "Malawi_L2"
+      model: "BD"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bd.xml"
+      xml_params:
+        invar_A: 758235
+        invar_C: 1449899
+        invar_G: 1444508
+        invar_T: 758105
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.025
+
+    bd_sampl025_Ma_L3:
+      dataset: "Malawi_L3"
+      model: "BD"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bd.xml"
+      xml_params:
+        invar_A: 758019
+        invar_C: 1449015
+        invar_G: 1443614
+        invar_T: 757885
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.025
+
+    bd_sampl025_Ma_L4:
+      dataset: "Malawi_L4"
+      model: "BD"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bd.xml"
+      xml_params:
+        invar_A: 755728
+        invar_C: 1442858
+        invar_G: 1437387
+        invar_T: 755482
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0086
+
+  # Tanzania
+
+    bd_sampl025_Ta_L1:
+      dataset: "Tanzania_L1"
+      model: "BD"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bd.xml"
+      xml_params:
+        invar_A: 757193
+        invar_C: 1445620
+        invar_G: 1440304
+        invar_T: 757054
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+
+    bd_sampl025_Ta_L2:
+      dataset: "Tanzania_L2"
+      model: "BD"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bd.xml"
+      xml_params:
+        invar_A: 758241
+        invar_C: 1449843
+        invar_G: 1444499
+        invar_T: 758079
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+
+    bd_sampl025_Ta_L3:
+      dataset: "Tanzania_L3"
+      model: "BD"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bd.xml"
+      xml_params:
+        invar_A: 757478
+        invar_C: 1447129
+        invar_G: 1441682
+        invar_T: 757287
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0089
+
+    bd_sampl025_Ta_L4:
+      dataset: "Tanzania_L4"
+      model: "BD"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bd.xml"
+      xml_params:
+        invar_A: 756818
+        invar_C: 1446064
+        invar_G: 1440575
+        invar_T: 756702
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+
+  # The Gambia
+
+    bd_sampl025_TG_L2:
+      dataset: "TheGambia_L2"
+      model: "BD"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 10000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bd.xml"
+      xml_params:
+        invar_A: 758196
+        invar_C: 1449808
+        invar_G: 1444461
+        invar_T: 758075
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.088
+
+    bd_sampl025_TG_L4:
+      dataset: "TheGambia_L4"
+      model: "BD"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bd.xml"
+      xml_params:
+        invar_A: 756096
+        invar_C: 1443247
+        invar_G: 1437847
+        invar_T: 755861
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.048
+
+    bd_sampl025_TG_L6:
+      dataset: "TheGambia_L6"
+      model: "BD"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bd.xml"
+      xml_params:
+        invar_A: 756308
+        invar_C: 1442914
+        invar_G: 1437460
+        invar_T: 756142
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.060
+
+  # Vietnam
+
+    bd_sampl025_VN_L1:
+      dataset: "Vietnam_L1"
+      model: "BD"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bd.xml"
+      xml_params:
+        invar_A: 755505
+        invar_C: 1438820
+        invar_G: 1433269
+        invar_T: 755399
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.045
+
+    bd_sampl025_VN_L2:
+      dataset: "Vietnam_L2"
+      model: "BD"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bd.xml"
+      xml_params:
+        invar_A: 754323
+        invar_C: 2160032
+        invar_G: 1434838
+        invar_T: 754147
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.017
+
+    bd_sampl025_VN_L4:
+      dataset: "Vietnam_L4"
+      model: "BD"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bd.xml"
+      xml_params:
+        invar_A: 756519
+        invar_C: 1444853
+        invar_G: 1439546
+        invar_T: 756448
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.045   
+
+  ### BD vs BDMM model selection
+
+  bdmm_modelselection:
+
+  # Malawi
+
+    bdmm_modelselection_Ma_L1:
+      dataset: "Malawi_L1"
+      model: "BDMM_SEL"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_modelselection.xml"
+      xml_params:
+        invar_A: 757261
+        invar_C: 1446122
+        invar_G: 1440632
+        invar_T: 757157
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.025
+
+    bdmm_modelselection_Ma_L2:
+      dataset: "Malawi_L2"
+      model: "BDMM_SEL"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_modelselection.xml"
+      xml_params:
+        invar_A: 758235
+        invar_C: 1449899
+        invar_G: 1444508
+        invar_T: 758105
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.025
+
+    bdmm_modelselection_Ma_L3:
+      dataset: "Malawi_L3"
+      model: "BDMM_SEL"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_modelselection.xml"
+      xml_params:
+        invar_A: 758019
+        invar_C: 1449015
+        invar_G: 1443614
+        invar_T: 757885
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.025
+
+    bdmm_modelselection_Ma_L4:
+      dataset: "Malawi_L4"
+      model: "BDMM_SEL"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_modelselection.xml"
+      xml_params:
+        invar_A: 755728
+        invar_C: 1442858
+        invar_G: 1437387
+        invar_T: 755482
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0086
+
+  # Tanzania
+
+    bdmm_modelselection_Ta_L1:
+      dataset: "Tanzania_L1"
+      model: "BDMM_SEL"
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_modelselection.xml"
+      xml_params:
+        invar_A: 757193
+        invar_C: 1445620
+        invar_G: 1440304
+        invar_T: 757054
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+
+    bdmm_modelselection_Ta_L2:
+      dataset: "Tanzania_L2"
+      model: "BDMM_SEL"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_modelselection.xml"
+      xml_params:
+        invar_A: 758241
+        invar_C: 1449843
+        invar_G: 1444499
+        invar_T: 758079
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+
+    bdmm_modelselection_Ta_L3:
+      dataset: "Tanzania_L3"
+      model: "BDMM_SEL"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_modelselection.xml"
+      xml_params:
+        invar_A: 757478
+        invar_C: 1447129
+        invar_G: 1441682
+        invar_T: 757287
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0089
+
+    bdmm_modelselection_Ta_L4:
+      dataset: "Tanzania_L4"
+      model: "BDMM_SEL"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_modelselection.xml"
+      xml_params:
+        invar_A: 756818
+        invar_C: 1446064
+        invar_G: 1440575
+        invar_T: 756702
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.0095
+
+  # The Gambia
+
+    bdmm_modelselection_TG_L2:
+      dataset: "TheGambia_L2"
+      model: "BDMM_SEL"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 10000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_modelselection.xml"
+      xml_params:
+        invar_A: 758196
+        invar_C: 1449808
+        invar_G: 1444461
+        invar_T: 758075
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.088
+
+    bdmm_modelselection_TG_L4:
+      dataset: "TheGambia_L4"
+      model: "BDMM_SEL"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_modelselection.xml"
+      xml_params:
+        invar_A: 756096
+        invar_C: 1443247
+        invar_G: 1437847
+        invar_T: 755861
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.048
+
+    bdmm_modelselection_TG_L6:
+      dataset: "TheGambia_L6"
+      model: "BDMM_SEL"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_modelselection.xml"
+      xml_params:
+        invar_A: 756308
+        invar_C: 1442914
+        invar_G: 1437460
+        invar_T: 756142
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.060
+
+  # Vietnam
+
+    bdmm_modelselection_VN_L1:
+      dataset: "Vietnam_L1"
+      model: "BDMM_SEL"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_modelselection.xml"
+      xml_params:
+        invar_A: 755505
+        invar_C: 1438820
+        invar_G: 1433269
+        invar_T: 755399
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.045
+
+    bdmm_modelselection_VN_L2:
+      dataset: "Vietnam_L2"
+      model: "BDMM_SEL"      
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_modelselection.xml"
+      xml_params:
+        invar_A: 754323
+        invar_C: 2160032
+        invar_G: 1434838
+        invar_T: 754147
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.017
+
+    bdmm_modelselection_VN_L4:
+      dataset: "Vietnam_L4"
+      model: "BDMM_SEL"    
+      command: "beast"
+      action: "overwrite"
+      time: 21600
+      mem_per_cpu: 4096
+      threads: 3
+      burnin: 10
+      resample: 1000
+      chains: 3
+      user_check: TRUE
+      xml: "xml/bdmm_modelselection.xml"
+      xml_params:
+        invar_A: 756519
+        invar_C: 1444853
+        invar_G: 1439546
+        invar_T: 756448
+        length: 100000000
+        log_every: 1000
+        treelog_every: 10000
+        sampling_prop: 0.045           

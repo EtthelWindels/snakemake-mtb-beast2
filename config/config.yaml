@@ -1,0 +1,30 @@
+### Config file snakemake-mtb-beast2
+
+run:
+  bdmm_sampl025: ["bdmm_sampl025_Ma_L1","bdmm_sampl025_Ma_L2","bdmm_sampl025_Ma_L3","bdmm_sampl025_Ma_L4","bdmm_sampl025_Ta_L1","bdmm_sampl025_Ta_L2","bdmm_sampl025_Ta_L3","bdmm_sampl025_Ta_L4","bdmm_sampl025_TG_L2","bdmm_sampl025_TG_L4","bdmm_sampl025_TG_L6","bdmm_sampl025_VN_L1","bdmm_sampl025_VN_L2","bdmm_sampl025_VN_L4"]
+  bdmm_sampl05: ["bdmm_sampl05_Ma_L1","bdmm_sampl05_Ma_L2","bdmm_sampl05_Ma_L3","bdmm_sampl05_Ma_L4","bdmm_sampl05_Ta_L1","bdmm_sampl05_Ta_L2","bdmm_sampl05_Ta_L3","bdmm_sampl05_Ta_L4","bdmm_sampl05_TG_L2","bdmm_sampl05_TG_L4","bdmm_sampl05_TG_L6","bdmm_sampl05_VN_L1","bdmm_sampl05_VN_L2","bdmm_sampl05_VN_L4"]
+  bdmm_sampl1: ["bdmm_sampl1_Ma_L1","bdmm_sampl1_Ma_L2","bdmm_sampl1_Ma_L3","bdmm_sampl1_Ma_L4","bdmm_sampl1_Ta_L1","bdmm_sampl1_Ta_L2","bdmm_sampl1_Ta_L3","bdmm_sampl1_Ta_L4","bdmm_sampl1_TG_L2","bdmm_sampl1_TG_L4","bdmm_sampl1_TG_L6","bdmm_sampl1_VN_L1","bdmm_sampl1_VN_L2","bdmm_sampl1_VN_L4"]
+  bdmm_bdsky_fixedRe: ["bdmm_bdsky_fixedRe_Ma_L1","bdmm_bdsky_fixedRe_Ma_L2","bdmm_bdsky_fixedRe_Ma_L3","bdmm_bdsky_fixedRe_Ma_L4","bdmm_bdsky_fixedRe_Ta_L1","bdmm_bdsky_fixedRe_Ta_L2","bdmm_bdsky_fixedRe_Ta_L3","bdmm_bdsky_fixedRe_Ta_L4","bdmm_bdsky_fixedRe_TG_L2","bdmm_bdsky_fixedRe_TG_L4","bdmm_bdsky_fixedRe_TG_L6","bdmm_bdsky_fixedRe_VN_L1","bdmm_bdsky_fixedRe_VN_L2","bdmm_bdsky_fixedRe_VN_L4"]
+  bdmm_inverse: ["bdmm_inverse_Ma_L1","bdmm_inverse_Ma_L2","bdmm_inverse_Ma_L3","bdmm_inverse_Ma_L4","bdmm_inverse_Ta_L1","bdmm_inverse_Ta_L2","bdmm_inverse_Ta_L3","bdmm_inverse_Ta_L4","bdmm_inverse_TG_L2","bdmm_inverse_TG_L4","bdmm_inverse_TG_L6","bdmm_inverse_VN_L1","bdmm_inverse_VN_L2","bdmm_inverse_VN_L4"]
+  bdmm_clockgrid: ["bdmm_clockgrid1_Ta_L1",bdmm_clockgrid1_Ta_L2,"bdmm_clockgrid2_Ta_L1",bdmm_clockgrid2_Ta_L2,"bdmm_clockgrid3_Ta_L1",bdmm_clockgrid3_Ta_L2,"bdmm_clockgrid4_Ta_L1",bdmm_clockgrid4_Ta_L2,"bdmm_clockgrid5_Ta_L1",bdmm_clockgrid5_Ta_L2,"bdmm_clockgrid6_Ta_L1",bdmm_clockgrid6_Ta_L2,"bdmm_clockgrid7_Ta_L1",bdmm_clockgrid7_Ta_L2]  
+  bd_sampl025: ["bd_sampl025_Ma_L1","bd_sampl025_Ma_L2","bd_sampl025_Ma_L3","bd_sampl025_Ma_L4","bd_sampl025_Ta_L1","bd_sampl025_Ta_L2","bd_sampl025_Ta_L3","bd_sampl025_Ta_L4","bd_sampl025_TG_L2","bd_sampl025_TG_L4","bd_sampl025_TG_L6","bd_sampl025_VN_L1","bd_sampl025_VN_L2","bd_sampl025_VN_L4"]
+  bdmm_modelselection: ["bdmm_modelselection_Ma_L1","bdmm_modelselection_Ma_L2","bdmm_modelselection_Ma_L3","bdmm_modelselection_Ma_L4","bdmm_modelselection_Ta_L1","bdmm_modelselection_Ta_L2","bdmm_modelselection_Ta_L3","bdmm_modelselection_Ta_L4","bdmm_modelselection_TG_L2","bdmm_modelselection_TG_L4","bdmm_modelselection_TG_L6","bdmm_modelselection_VN_L1","bdmm_modelselection_VN_L2","bdmm_modelselection_VN_L4"]
+
+config_analyses: "config/analyses.yaml"
+
+target_files:
+  bdmm_sampl025: ["log","trees"]
+  bdmm_sampl05: ["log","trees"]
+  bdmm_sampl1: ["log","trees"]
+
+  bdmm_bdsky_fixedRe: ["log","trees"]
+  bdmm_inverse: ["log","trees"]
+  bdmm_clockgrid: ["log","trees"]
+  
+  bd_sampl025: ["log","trees"]
+  bdmm_modelselection: ["log","trees"]
+
+
+
+
+

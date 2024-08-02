@@ -1,0 +1,92 @@
+### Snakemake workflow to run BEAST2 analysis with Mtb data
+# Copyright (C) 2024  Etthel Windels
+
+#import urllib, json
+#import pandas as pd
+#import numpy as np
+from snakemake.utils import validate, min_version
+
+min_version("7.11.0")
+
+# Add config files
+configfile: "config/config.yaml"
+
+if config.get("config_analyses") is not None:
+    configfile: config["config_analyses"]
+
+# Rules to run locally
+localrules: all, clean
+
+# Wildcards
+wildcard_constraints:
+    method="[A-Za-z0-9_.]+",
+    analysis="[A-Za-z0-9_.]+",
+    chain="[0-9]",
+    i="[0-9]"
+
+# BEAST2 output files
+
+all_beast_files = []
+METHODS = config["run"].keys()
+for method in METHODS:
+    ANALYSES = config["run"][method]
+    for analysis in ANALYSES:
+        FILE_TYPE = config["target_files"][method]
+        files = expand("results/analyses/" + method + "/" + analysis + "/" + analysis + ".{filetype}",filetype = FILE_TYPE)
+        all_beast_files += files
+        
+# Figure output files
+
+# def _get_first_analysis(method):
+#     return list(config["analyses"][method].keys())[0]
+
+# def _get_model_method(method,analysis):
+#      return config["analyses"][method][analysis].get("model")
+
+bdmm_figures = expand("results/figures/{method}.{extension}",
+        method = ["bdmm_sampl025","bdmm_sampl05","bdmm_sampl1","bdmm_bdsky_fixedRe","bdmm_inverse","bdmm_clockgrid"], 
+        extension = ["png","svg"])
+
+bd_bdmm_figures = expand("results/figures/bd-bdmm_comparison_{parameter}.{extension}",
+        parameter = ["Re","time_until_transm","infperiod_tot","transrate_infperiod"], 
+        extension = ["png","svg"])
+
+# bdmm_bdsky_fRe_figures = expand("results/figures/bdmm_bdsky_fRe/{method}/{output}.png",
+#         method = [M for M in config["run"].keys() if _get_model_method(M,_get_first_analysis(M)) == "BDMM_BDSKY_fRe"], 
+#         output = ["infperiod","latentperiod","infperiodtot","transm_rate"])
+# bdmm_inverse_figures = expand("results/figures/bdmm_inverse/{method}/{output}.png",
+#         method = [M for M in config["run"].keys() if _get_model_method(M,_get_first_analysis(M)) == "BDMM_INV"], 
+#         output = ["Re","infperiod","latentperiod","infperiodtot","transm_rate"])      
+# bd_figures = expand("results/figures/bd/{method}/{output}.png",
+#         method = [M for M in config["run"].keys() if _get_model_method(M,_get_first_analysis(M)) == "BD"], 
+#         output = ["Re","infperiod","transm_rate"])  
+# bdmm_modelselection_figures = expand("results/figures/bdmm_modelselection/{method}/{output}.png",
+#         method = [M for M in config["run"].keys() if _get_model_method(M,_get_first_analysis(M)) == "BDMM_SEL"], 
+#         output = ["Re","infperiod","latentperiod","infperiodtot","transm_rate","BF"])    
+
+rule all:
+    input:
+        all_beast_files,
+        bdmm_figures,
+        bd_bdmm_figures
+        # bdmm_figures,
+        # bdmm_bdsky_fRe_figures,
+        # bdmm_inverse_figures,
+        # bd_figures,
+        # bdmm_modelselection_figures
+    default_target: True
+        
+
+rule clean:
+    shell:
+        '''
+        rm -rf results logs
+        '''
+
+# Include workflow rules
+include: "rules/common.smk"
+include: "rules/pre-processing.smk"
+include: "rules/phylodynamics.smk"
+include: "rules/post-processing.smk"
+
+ruleorder: beast > combine_chains 

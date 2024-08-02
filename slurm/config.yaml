@@ -1,0 +1,28 @@
+
+cluster-cancel: "scancel"
+restart-times: "0"
+jobscript: "slurm-jobscript.sh"
+cluster: "slurm-submit.py"
+cluster-status: "slurm-status.py"
+max-jobs-per-second: "10"
+max-status-checks-per-second: "10"
+local-cores: 1
+latency-wait: "5"
+use-conda: "False"
+use-singularity: "False"
+jobs: "500"
+printshellcmds: "True"
+
+# Example resource configuration
+#default-resources:
+# - runtime=100
+# - mem_per_cpu=2000
+# - disk_mb=1000000
+# set-threads: map rule names to threads
+#set-threads:
+# - beast=2
+# set-resources: map rule names to resources in general
+#set-resources:
+ #- beast:mem_per_cpu=10000
+# - combine_chains:mem_per_cpu=10000
+# - beast:runtime=14400
