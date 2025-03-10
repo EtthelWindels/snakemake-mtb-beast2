@@ -7,6 +7,8 @@ This workflow is based on the more general [snakemake-phylo-beast2](https://gith
 
 These analyses were aimed at estimating the epidemiological characteristics (reproductive number, non-infectious period, infectious period) per *M. tuberculosis* lineage (L1, L2, L3, L4, and L6 in Malawi, Tanzania, The Gambia, and Vietnam).
 
+The folder `other_scripts/` contains scripts to calculate terminal branch lengths and clustering rates. These scripts are not part of the Snakemake workflow.
+
 The raw sequencing data used in this study are available under the following project accession numbers: 
 - Malawi: [PRJEB2358](https://www.ebi.ac.uk/ena/browser/view/PRJEB2358) and [PRJEB2794](https://www.ebi.ac.uk/ena/browser/view/PRJEB2794)
 - Tanzania: [PRJEB49562](https://www.ebi.ac.uk/ena/browser/view/PRJEB49562)
